@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+</head>
+
+<body>
+    <script>
+
+        let user1 = {
+            name: "user",
+            login: "login1",
+            surname: "surname1",
+
+            showContactInfo: function (){
+                console.log("Меня зовут " + this.name + " Мой емейл " + this.email)
+            },
+
+            showFullName: function (){
+                console.log("Мои имя и фамилия: " + this.name + " " + this.surname)
+            },
+
+            showArrThis: ()=> {
+                console.log(this)
+            }
+        }
+
+        user1.showContactInfo()
+
+        user1.showArrThis()
+        user1.showArrThis()
+        user1.showArrThis()
+
+        user1.showArrThis()
+        user1.showArrThis()
+
+
+
+        //
+        // // создание объекта с двумя свойствами name и email
+        // let user = {
+        //     name: "admin",
+        //     email: "admin@example.com"
+        // };
+        //
+        //
+        // console.log(user.name);
+        // console.log(user.email);
+        //
+        // user.email = "admin@itvdn.com";    // изменение значение свойства email
+        //
+        // console.log(user.email);
+    </script>
+</body>
+
+</html>
